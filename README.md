@@ -1,2 +1,2 @@
 # student-project
-Coding assignment and practice programs for learing javascript
+Coding assignment and practice programs repo javascript
