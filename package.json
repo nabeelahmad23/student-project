@@ -1,20 +1,22 @@
 {
-  "name": "student-project",
+  "name": "folder",
   "version": "1.0.0",
-  "description": "",
+  "description": "A backend code ",
+  "keywords": [
+    "javascript",
+    "Backend",
+    "of",
+    "chai"
+  ],
   "repository": {
     "type": "git",
     "url": "no"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Nabeel Ahmad",
   "type": "commonjs",
-  "main": "server.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^5.2.1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
