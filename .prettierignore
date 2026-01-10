@@ -1,0 +1,6 @@
+/.vscodes
+/node_models
+./dist
+*.env
+.env
+.env.*
