@@ -8,16 +8,13 @@
     "of",
     "chai"
   ],
-  "repository": {
-    "type": "git",
-    "url": "no"
-  },
+
   "license": "ISC",
   "author": "Nabeel Ahmad",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config  src/index.js"
+    "start": "nodemon -r dotenv/config src/index.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.11",
