@@ -1,6 +1,7 @@
 
 import dotenv from "dotenv"
 import connectDBI from "./db/indexDB.js";
+import { app } from "./app.js";
 
 dotenv.config({
     path:'./env'
@@ -8,8 +9,20 @@ dotenv.config({
 
 
 connectDBI()
-
-
+.then(() => {
+    app.on("ERROR",(erro) => {
+        console.log("ERROR",erro);
+        throw erro
+    })
+    app.listen(process.env.PORT || 8000,() => {
+       console.log(`Server is running at port : ${process.env.PORT}`);
+        
+    })
+})
+.catch( (err) => {
+  console.log("Mongo DB ERROR !! ",err);
+  
+})
 
 
 
